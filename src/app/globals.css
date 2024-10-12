@@ -2,26 +2,144 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header {
+    background-color: rgb(6, 50, 6);
+    color: white;
+    height: 75px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.headerButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 40px;
+}
+
+.footer {
+    background-color: rgb(6, 50, 6);
+    color: white;
+    height: 75px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-size: 40px;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 150vh;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-items: center;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .midContainer {
+    width: 250px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 50px;
+    transition-duration: 0.5s;
+    border: 3px solid black;
   }
+  
+  .midContainer:hover {
+    border: 3px solid purple;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .imageContainer {
+  width: 100%;
+  height: 150px;
+  background-image: url(../../image/flag.webp);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+.imageContainer1 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../image/ibex3.jpg);
+    background-size: 190px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+.imageContainer2 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../image/chakoor.jpg);
+    background-size: 217px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imageContainer3 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../image/jasmine.jpg);
+    background-size: 217px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+  
+.imageContainer4 {
+    width: 100%;
+    height: 180px;
+    background-image: url(../../image/shalwar-kameez.jpg);
+    background-size: 217px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imageContainer5 {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../image/k2-mountain.jpeg);
+    background-size: 217px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+  .title {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 13px;
+  }
+  
+  .moreInfo {
+    width: 40%;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid blueviolet;
+    font-size: 10px;
+    color: blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+    transition-duration: 0.5s;
+  }
+  
+  .moreInfo:hover {
+    border: 1px solid rgb(209, 159, 255);
+    color: rgb(209, 159, 255);
+  }
+
+
+
